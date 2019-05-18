@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinSAK.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Entry Placeholder="Email" x:Name="Email"/>
+            <Entry Placeholder="Password" x:Name="Pass"/>
+            <Button Text="Login" x:Name="Login" Clicked="Login_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
